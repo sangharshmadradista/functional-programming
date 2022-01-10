@@ -20,7 +20,7 @@ jobs:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
     env:
-      value: 2
+      value: 1
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
@@ -41,7 +41,7 @@ jobs:
         run: | 
           echo Hello, World
           
-      - name: Greetings, from an org
+      - name: Retry Check Out
         uses: actions/checkout@v2
         if: ${{env.value == 2}}
         
