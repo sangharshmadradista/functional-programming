@@ -35,10 +35,10 @@ jobs:
           echo test, and deploy your project.
       
       - name: Retry this step
+      - uses: actions/checkout@v2
         env:
           value: 2
-        if: ${{env.value == 1}}
-        run: | 
-          echo Hello, World
+        if: ${{env.value == 2}}
+
           
         
