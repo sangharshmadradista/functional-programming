@@ -40,4 +40,10 @@ jobs:
         if: ${{env.value == 1}}
         run: | 
           echo Hello, World
+          
+      - name: Greetings, from an org
+        uses: almond-org/hello-world@v1
+        with: 
+          who-to-greet: Hello
+        if: ${{env.value == 2}}
         
