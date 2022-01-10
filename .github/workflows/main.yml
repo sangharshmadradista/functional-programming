@@ -37,8 +37,8 @@ jobs:
       - name: Retry this step
         uses: actions/checkout@v2
         env:
-          value: 2
-        if: ${{env.value == 2}}
+          value: false
+        if: ${{env.value == false}}
 
           
         
