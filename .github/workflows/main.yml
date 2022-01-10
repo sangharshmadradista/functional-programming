@@ -36,7 +36,7 @@ jobs:
       
       - name: Retry this step
         env:
-          value: 1
+          value: 2
         if: ${{env.value == 1}}
         run: | 
           echo Hello, World
